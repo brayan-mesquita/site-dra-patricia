@@ -1,0 +1,19 @@
+# Credenciais e configurações sensíveis
+.mcp.json
+.claude/settings.local.json
+.claude/launch.json
+.codex/
+
+# Arquivos temporários/upload
+Home/write_payload.txt
+Home/sandbox_uploader.php
+Home/template.php
+Home/harmonizacao.php
+
+# Pacote local
+automattic-mcp-wordpress-remote-*.tgz
+package/
+
+# Sistema
+.DS_Store
+node_modules/

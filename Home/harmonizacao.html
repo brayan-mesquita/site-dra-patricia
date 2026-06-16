@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmonização Facial em Porto Velho - Dra. Patricia Nogueira</title>
+  <meta name="description"
+    content="Realce sua beleza natural com Harmonização Facial em Porto Velho. Botox, Preenchimento Labial, Rinomodelação e mais, sob os cuidados da Dra. Patricia Nogueira." />
+
+  <!-- Preconnect to external resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── Reset & Base ─────────────────────────────── */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #231C2E;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img,
+    svg {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    /* Scrollbar sutil */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F6F3FB;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C5B6DC;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #A892C4;
+    }
+
+    /* ─── Design Tokens (Lilac identity) ───────────── */
+    :root {
+      --plum-950: #1C1726;
+      --plum-900: #2E283D;
+      --plum-850: #342D45;
+      --plum-800: #3E3651;
+      --lilac-700: #574A75;
+      --lilac-600: #6E5E91; /* Primary */
+      --lilac-500: #8A77B0;
+      --lilac-400: #A892C4;
+      --lilac-300: #C5B6DC; /* Accent on dark backgrounds */
+      --lilac-tint: #EFEAF5;
+      --green: #25D366;
+      --green-dk: #1ebe57;
+      --ink: #231C2E;
+      --slate: #6B6478;
+      --slate-2: #8B84A0;
+      --line: #E9E4F0;
+      --bg-soft: #F6F3FB;
+      --radius: 20px;
+      --radius-sm: 12px;
+      --shadow-sm: 0 4px 12px rgba(46, 40, 61, 0.05);
+      --shadow-md: 0 12px 30px rgba(46, 40, 61, 0.08);
+      --shadow-lg: 0 20px 48px rgba(46, 40, 61, 0.12);
+    }
+
+    /* ─── Layout helpers ──────────────────────────── */
+    .wrap {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    section.soft {
+      background: var(--bg-soft);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--lilac-600);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 28px;
+      height: 2px;
+      background: var(--lilac-600);
+    }
+
+    .eyebrow.on-dark {
+      color: var(--lilac-300);
+    }
+
+    .eyebrow.on-dark::before {
+      background: var(--lilac-300);
+    }
+
+    .h2 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+
+    .h2.on-dark {
+      color: #fff;
+    }
+
+    .lead {
+      color: var(--slate);
+      font-size: 1.05rem;
+      margin-top: 14px;
+      max-width: 55ch;
+    }
+
+    .lead.on-dark {
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-center .eyebrow {
+      justify-content: center;
+    }
+
+    .text-center .eyebrow::after {
+      content: '';
+      width: 28px;
+      height: 2px;
+      background: var(--lilac-600);
+    }
+
+    .text-center .lead {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ─── Buttons ─────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 16px 28px;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary {
+      background: var(--lilac-600);
+      color: #fff;
+      box-shadow: 0 10px 26px rgba(110, 94, 145, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: var(--lilac-700);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(110, 94, 145, 0.4);
+    }
+
+    .btn-wa {
+      background: var(--green);
+      color: #fff;
+      box-shadow: 0 8px 22px rgba(37, 211, 102, 0.25);
+    }
+
+    .btn-wa:hover {
+      background: var(--green-dk);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 26px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateY(-2px);
+    }
+
+    .btn-sm {
+      padding: 10px 20px;
+      font-size: 0.88rem;
+    }
+
+    /* ─── Header ─────────────────────────────────── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(233, 228, 240, 0.8);
+      transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+      padding: 15px 0;
+    }
+
+    header.scrolled {
+      box-shadow: 0 8px 30px rgba(46, 40, 61, 0.06);
+      padding: 10px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--plum-950);
+    }
+
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--lilac-500), var(--lilac-300));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 1.15rem;
+      color: var(--plum-900);
+      letter-spacing: -0.5px;
+      box-shadow: 0 4px 14px rgba(138, 119, 176, 0.35);
+    }
+
+    .logo-txt b {
+      font-size: 1.05rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      display: block;
+    }
+
+    .logo-txt span {
+      font-size: 0.72rem;
+      color: var(--slate);
+      font-weight: 500;
+    }
+
+    /* Menu de Navegação */
+    nav {
+      display: none;
+    }
+
+    @media (min-width: 900px) {
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      nav a {
+        font-size: 0.92rem;
+        font-weight: 600;
+        color: var(--slate);
+        transition: color 0.2s;
+      }
+
+      nav a:hover {
+        color: var(--lilac-600);
+      }
+    }
+
+    .header-cta .btn {
+      display: none;
+    }
+
+    @media (min-width: 600px) {
+      .header-cta .btn {
+        display: inline-flex;
+      }
+    }
+
+    /* ─── Hero Section ────────────────────────────── */
+    .hero {
+      position: relative;
+      background:
+        radial-gradient(120% 90% at 85% 0%, rgba(138, 119, 176, 0.25) 0%, rgba(138, 119, 176, 0) 55%),
+        radial-gradient(80% 70% at 0% 100%, rgba(110, 94, 145, 0.15) 0%, rgba(110, 94, 145, 0) 60%),
+        linear-gradient(165deg, var(--plum-900) 0%, var(--plum-950) 100%);
+      color: #fff;
+      padding: 100px 0 120px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 60px;
+      }
+    }
+
+    .offer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: rgba(197, 182, 220, 0.12);
+      border: 1px solid rgba(197, 182, 220, 0.3);
+      color: var(--lilac-300);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 50px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .hero h1 span {
+      color: var(--lilac-300);
+    }
+
+    .hero .hero-sub {
+      font-size: clamp(1.15rem, 2vw, 1.4rem);
+      font-weight: 600;
+      color: var(--lilac-300);
+      margin-bottom: 20px;
+      line-height: 1.25;
+    }
+
+    .hero p {
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 1.02rem;
+      max-width: 44em;
+      margin-bottom: 32px;
+      line-height: 1.65;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    /* Elementos de Confiança */
+    .hero-trust {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .trust-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .avatar-group {
+      display: flex;
+    }
+
+    .avatar-group img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--plum-900);
+      object-fit: cover;
+      margin-right: -10px;
+      background: var(--plum-800);
+    }
+
+    .trust-text {
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .trust-text strong {
+      color: #fff;
+      display: block;
+      font-size: 1rem;
+    }
+
+    .trust-google {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.8);
+      border-left: 1px solid rgba(255, 255, 255, 0.15);
+      padding-left: 16px;
+    }
+
+    .trust-google .stars {
+      color: #FFC107;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .trust-badge-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .trust-google {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 10px;
+        width: 100%;
+      }
+    }
+
+    /* Coluna Direita - Imagem Premium */
+    .hero-media {
+      position: relative;
+      justify-self: center;
+    }
+
+    .hero-media-wrapper {
+      position: relative;
+      width: 290px;
+      height: 420px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, var(--lilac-600), var(--plum-850));
+      padding: 10px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    @media (min-width: 480px) {
+      .hero-media-wrapper {
+        width: 310px;
+        height: 450px;
+      }
+    }
+
+    .hero-media-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: calc(var(--radius) - 8px);
+      filter: brightness(0.98);
+    }
+
+    .floating-badge {
+      position: absolute;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 12px;
+      padding: 12px 18px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 5;
+    }
+
+    .floating-badge.badge-1 {
+      bottom: 30px;
+      left: -25px;
+    }
+
+    .floating-badge.badge-2 {
+      top: 40px;
+      right: -25px;
+      background: var(--plum-900);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .floating-badge .icon {
+      font-size: 1.3rem;
+    }
+
+    .floating-badge .text b {
+      display: block;
+      font-size: 0.95rem;
+      line-height: 1.1;
+    }
+
+    .floating-badge .text span {
+      font-size: 0.72rem;
+      color: var(--slate);
+    }
+
+    .floating-badge.badge-2 .text span {
+      color: var(--lilac-300);
+    }
+
+    @media (max-width: 480px) {
+      .floating-badge.badge-1 {
+        left: 10px;
+        bottom: 15px;
+      }
+      .floating-badge.badge-2 {
+        right: 10px;
+        top: 15px;
+      }
+    }
+
+    /* ─── Stats Card (Overlap) ───────────────────── */
+    .stats-card-container {
+      position: relative;
+      z-index: 10;
+      margin-top: -50px;
+    }
+
+    .stats-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1fr;
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+
+    @media (min-width: 600px) {
+      .stats-card {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .stat {
+      padding: 28px;
+      text-align: center;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+    }
+
+    @media (min-width: 600px) {
+      .stat {
+        border-bottom: none;
+        border-right: 1px solid var(--line);
+      }
+      .stat:last-child {
+        border-right: none;
+      }
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--plum-950);
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+
+    .stat strong em {
+      color: var(--lilac-600);
+      font-style: normal;
+    }
+
+    .stat span {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--slate);
+      margin-top: 8px;
+      line-height: 1.4;
+    }
+
+    /* ─── Intro Section ───────────────────────────── */
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .intro-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+      }
+    }
+
+    .intro-info h2 {
+      margin-bottom: 20px;
+    }
+
+    .intro-info p {
+      color: var(--slate);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    /* ─── Grid de Procedimentos ───────────────────── */
+    .procedimentos-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    @media (min-width: 768px) {
+      .procedimentos-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .procedimentos-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .proc-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .proc-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--lilac-400);
+    }
+
+    .proc-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-sm);
+      background: var(--lilac-tint);
+      color: var(--lilac-600);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .proc-card:hover .proc-icon {
+      background: var(--lilac-600);
+      color: #fff;
+    }
+
+    .proc-icon svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .proc-card h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--plum-950);
+      margin-bottom: 12px;
+    }
+
+    .proc-card p {
+      font-size: 0.92rem;
+      color: var(--slate);
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+
+    /* ─── Gallery Section ──────────────────────────── */
+    .tabs-wrapper {
+      margin-top: 40px;
+    }
+
+    .tabs-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .tab-btn {
+      background: var(--bg-soft);
+      border: 1px solid var(--line);
+      color: var(--slate);
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .tab-btn.active {
+      background: var(--plum-900);
+      color: #fff;
+      border-color: var(--plum-900);
+    }
+
+    .tabs-content {
+      position: relative;
+    }
+
+    .tab-pane {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .tab-pane.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 600px) {
+      .gallery-grid.columns-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-grid.columns-3 {
+        grid-template-columns: repeat(2, 1fr); /* 2 on tablet */
+      }
+    }
+
+    @media (min-width: 900px) {
+      .gallery-grid.columns-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .gallery-card {
+      background: #fff;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gallery-media {
+      position: relative;
+      overflow: hidden;
+      background: #ded2ee;
+      aspect-ratio: 4/3;
+    }
+
+    .gallery-media.ratio-16-9 {
+      aspect-ratio: 16/9;
+    }
+
+    .gallery-media.ratio-1-1 {
+      aspect-ratio: 1/1;
+    }
+
+    .gallery-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-card:hover .gallery-media img {
+      transform: scale(1.03);
+    }
+
+    .gallery-label {
+      background: var(--plum-950);
+      color: #fff;
+      padding: 16px 20px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ─── FAQ Section ─────────────────────────────── */
+    .faq-wrap {
+      max-width: 820px;
+      margin: 44px auto 0;
+    }
+
+    .faq-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: #fff;
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+
+    .faq-item.open {
+      box-shadow: var(--shadow-sm);
+      border-color: var(--lilac-400);
+    }
+
+    .faq-q {
+      width: 100%;
+      text-align: left;
+      padding: 22px 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: var(--plum-950);
+    }
+
+    .faq-q .arrow {
+      min-width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--lilac-tint);
+      color: var(--lilac-600);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: transform 0.25s, background 0.2s, color 0.2s;
+    }
+
+    .faq-item.open .arrow {
+      transform: rotate(45deg);
+      background: var(--lilac-600);
+      color: #fff;
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-a p {
+      padding: 0 24px 22px;
+      font-size: 0.93rem;
+      color: var(--slate);
+      line-height: 1.65;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 300px;
+    }
+
+    /* ─── CTA Card ────────────────────────────────── */
+    .cta-container {
+      padding: 60px 0 100px;
+    }
+
+    .cta-card {
+      background: linear-gradient(145deg, var(--plum-900) 0%, var(--plum-950) 100%);
+      border-radius: var(--radius);
+      padding: 60px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .cta-card::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(138, 119, 176, 0.15) 0%, rgba(138, 119, 176, 0) 70%);
+      pointer-events: none;
+    }
+
+    .cta-card h2 {
+      color: #fff;
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .cta-card p {
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 1.05rem;
+      max-width: 55ch;
+      margin: 0 auto 36px;
+    }
+
+    /* ─── Footer ─────────────────────────────────── */
+    footer {
+      background: var(--plum-950);
+      color: rgba(255, 255, 255, 0.6);
+      padding: 60px 0 40px;
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 768px) {
+      .footer-inner {
+        grid-template-columns: 1.5fr 1fr 1fr;
+      }
+    }
+
+    .footer-brand .logo {
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .footer-brand .logo-txt span {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      max-width: 32ch;
+    }
+
+    .footer-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--lilac-300);
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .social-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .social-btn:hover {
+      background: var(--lilac-600);
+      transform: translateY(-2px);
+    }
+
+    .social-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .footer-copy {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.4);
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer-copy {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    .footer-copy a {
+      color: rgba(255, 255, 255, 0.4);
+      transition: color 0.2s;
+    }
+
+    .footer-copy a:hover {
+      color: var(--lilac-300);
+    }
+
+    /* ─── Mobile Bottom Fixed Bar ────────────────── */
+    .mobile-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 900;
+      display: none;
+      gap: 12px;
+      padding: 12px 18px;
+      background: rgba(28, 23, 38, 0.95);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-bar .btn {
+      flex: 1;
+      padding: 14px;
+      font-size: 0.9rem;
+      border-radius: var(--radius-sm);
+    }
+
+    @media (max-width: 880px) {
+      .mobile-bar {
+        display: flex;
+      }
+      body {
+        padding-bottom: 74px; /* Space for the mobile bar */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══ HEADER ════════════════════════════════════ -->
+  <header id="siteHeader">
+    <div class="wrap header-inner">
+      <a href="/" class="logo">
+        <div class="logo-mark">PN</div>
+        <div class="logo-txt">
+          <b>Dra. Patricia Nogueira</b>
+          <span>Implantodontia · CRO-RO 1714</span>
+        </div>
+      </a>
+      <nav>
+        <a href="/#servicos">Serviços</a>
+        <a href="#resultados">Resultados</a>
+        <a href="/#sobre">Sobre a Dra</a>
+        <a href="/#depoimentos">Depoimentos</a>
+        <a href="/#endereco">Endereço</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-wa btn-sm" href="https://wa.me/5569992027233?text=Olá! Gostaria de agendar uma avaliação para Harmonização Facial." target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle; margin-right:4px;">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Agendar avaliação
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ HERO SECTION ══════════════════════════════ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <span class="offer-pill">✨ Odontologia Estética & Facial</span>
+        <h1>Harmonização Facial em <span>Porto Velho</span></h1>
+        <p class="hero-sub">Dra. Patricia Nogueira — CRO-RO 1714</p>
+        <p>
+          Realce a sua beleza natural com tratamentos modernos, seguros e focados na sua autoestima. Um planejamento facial completo para restaurar o equilíbrio e a jovialidade do seu rosto de forma sutil e elegante.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-wa" href="https://wa.me/5569992027233?text=Olá! Gostaria de agendar uma avaliação para Harmonização Facial com a Dra. Patricia." target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Agendar minha avaliação agora
+          </a>
+          <a class="btn btn-ghost" href="#procedimentos">Ver tratamentos</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-badge-row">
+            <div class="avatar-group">
+              <img src="https://drapatricianogueira.com.br/wp-content/uploads/2024/03/nicole_perfil.webp" alt="Paciente Nicole" width="44" height="44" />
+              <img src="https://drapatricianogueira.com.br/wp-content/uploads/2024/01/home-avatar-2.webp" alt="Paciente Maria" width="44" height="44" />
+              <img src="https://drapatricianogueira.com.br/wp-content/uploads/2024/02/suelen.webp" alt="Paciente Suelen" width="44" height="44" />
+              <img src="https://drapatricianogueira.com.br/wp-content/uploads/2024/03/carol_perfil.webp" alt="Paciente Carol" width="44" height="44" />
+            </div>
+            <div class="trust-text">
+              <strong>Procedimentos de Alta Performance</strong>
+              <span>Resultados que valorizam a sua essência</span>
+            </div>
+            <div class="trust-google">
+              <div>
+                <b>5.0</b> <span class="stars">★★★★★</span>
+                <span style="display:block; font-size:0.75rem; opacity:0.8;">Avaliação máxima no Google</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-media-wrapper">
+          <img src="https://drapatricianogueira.com.br/wp-content/uploads/2023/10/drapatricia-571x1024.webp" alt="Dra. Patricia Nogueira - Especialista em Harmonização" width="310" height="450" />
+          <div class="floating-badge badge-1">
+            <span class="icon">✨</span>
+            <div class="text">
+              <b>Naturalidade</b>
+              <span>Sutileza em foco</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-2">
+            <span class="icon">🏆</span>
+            <div class="text">
+              <b>Dra. Patricia</b>
+              <span>CRO-RO 1714</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS BAR ═════════════════════════════════ -->
+  <div class="wrap stats-card-container">
+    <div class="stats-card">
+      <div class="stat">
+        <strong>Sutileza</strong>
+        <span>Procedimentos sob medida para o seu rosto</span>
+      </div>
+      <div class="stat">
+        <strong>Segurança</strong>
+        <span>Materiais certificados e técnicas avançadas</span>
+      </div>
+      <div class="stat">
+        <strong>Rejuvenescimento</strong>
+        <span>Realce da jovialidade sem perder a identidade</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ INTRO / BIOGRAFIA SECTION ═════════════════ -->
+  <section class="soft">
+    <div class="wrap intro-grid">
+      <div class="intro-media">
+        <div class="about-image-wrapper" style="margin: 0 auto;">
+          <img src="https://drapatricianogueira.com.br/wp-content/uploads/2024/03/patricia-nogueira-dentista-site.webp" alt="Dra. Patricia Nogueira no consultório" width="330" height="440" />
+          <div class="about-experience-badge">
+            <strong>16+</strong>
+            <span>Anos Clínicos</span>
+          </div>
+        </div>
+      </div>
+      <div class="intro-info">
+        <span class="eyebrow">Apresentação</span>
+        <h2 class="h2">Harmonização Facial Focada em Você</h2>
+        <p>
+          Olá, seja bem-vindo(a), sou a Dra. Patricia Nogueira, cirurgiã dentista especializada em proporcionar uma aparência mais jovem e saudável aos meus pacientes. Estou localizada em Porto Velho-RO.
+        </p>
+        <p>
+          Acredito que o grande segredo de uma Harmonização Facial de sucesso está na <strong>sutileza</strong>. Em vez de criar padrões artificiais, o objetivo é suavizar imperfeições, preencher áreas que perderam volume com o envelhecimento natural e realçar os seus pontos fortes, garantindo um resultado elegante e totalmente condizente com a sua personalidade.
+        </p>
+        <a class="btn btn-wa" href="https://wa.me/5569992027233?text=Olá Dra. Patricia! Gostaria de agendar uma consulta de Harmonização Facial." target="_blank" rel="noopener">
+          Falar diretamente com a Doutora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROCEDIMENTOS SECTION ═════════════════════ -->
+  <section id="procedimentos">
+    <div class="wrap">
+      <div class="text-center">
+        <span class="eyebrow">Tratamentos Oferecidos</span>
+        <h2 class="h2">Técnicas Modernas de Harmonização</h2>
+        <p class="lead">Soluções estéticas integradas e planejadas para garantir a melhor versão da sua expressão facial.</p>
+      </div>
+
+      <div class="procedimentos-grid">
+        <!-- Toxina Botulínica -->
+        <div class="proc-card">
+          <div class="proc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>Toxina Botulínica (Botox)</h3>
+          <p>Utilizado para suavizar rugas e linhas de expressão nas regiões da testa, entre as sobrancelhas e ao redor dos olhos, proporcionando uma aparência visivelmente rejuvenescida, leve e suave.</p>
+        </div>
+
+        <!-- Preenchimentos -->
+        <div class="proc-card">
+          <div class="proc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
+              <line x1="16" y1="8" x2="2" y2="22" />
+              <line x1="17.5" y1="15" x2="9" y2="15" />
+            </svg>
+          </div>
+          <h3>Preenchimentos Faciais</h3>
+          <p>Utilizamos substâncias seguras como o ácido hialurônico para preencher rugas, sulcos (como o famoso bigode chinês) e repor volumes perdidos nas maçãs do rosto, restaurando a firmeza e a hidratação da pele.</p>
+        </div>
+
+        <!-- Preenchimento Labial -->
+        <div class="proc-card">
+          <div class="proc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10c0-2.22-.72-4.27-1.93-5.93M8 11.5s1.5 2 4 2 4-2 4-2" />
+            </svg>
+          </div>
+          <h3>Preenchimento Labial</h3>
+          <p>Desenvolvido para desenhar o contorno, definir o arco do cupido e conferir volume sob medida aos lábios, proporcionando simetria e hidratação profunda com ácido hialurônico.</p>
+        </div>
+
+        <!-- Rinomodelação -->
+        <div class="proc-card">
+          <div class="proc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v8M9 12h6" />
+            </svg>
+          </div>
+          <h3>Rinomodelação Não-Cirúrgica</h3>
+          <p>Procedimento minimamente invasivo que permite disfarçar imperfeições no dorso do nariz ou empinar a ponta nasal usando ácido hialurônico, melhorando o perfil do rosto de forma rápida.</p>
+        </div>
+
+        <!-- Fios de Sustentação -->
+        <div class="proc-card">
+          <div class="proc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 12h16M4 6h16M4 18h16" />
+            </svg>
+          </div>
+          <h3>Fios de Sustentação (PDO)</h3>
+          <p>Técnica de rejuvenescimento que utiliza fios absorvíveis de polidioxanona para promover um efeito lifting imediato, além de estimular a produção natural de colágeno a médio e longo prazo.</p>
+        </div>
+
+        <!-- Bioestimuladores -->
+        <div class="proc-card">
+          <div class="proc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3v18M3 12h18M12 12m-6 0a6 6 0 1 0 12 0 6 6 0 1 0 -12 0" />
+            </svg>
+          </div>
+          <h3>Bioestimuladores de Colágeno</h3>
+          <p>Substâncias injetáveis que ativam as células produtoras de colágeno do próprio organismo, melhorando de forma global a textura, elasticidade e a firmeza da pele facial ao longo dos meses.</p>
+        </div>
+
+        <!-- Lipo de Papada -->
+        <div class="proc-card">
+          <div class="proc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 10h.01M16 10h.01M12 14a3 3 0 0 1-3-3h6a3 3 0 0 1-3 3z" />
+              <path d="M12 2a10 10 0 0 0-10 10c0 4.135 2.52 7.68 6.135 9.22A12.01 12.01 0 0 1 12 20a12.01 12.01 0 0 1 3.865 1.22c3.615-1.54 6.135-5.085 6.135-9.22a10 10 0 0 0-10-10z" />
+            </svg>
+          </div>
+          <h3>Lipo de Papada Enzimática</h3>
+          <p>Aplicação de microinjeções de enzimas especiais na região submentoniana (papada) para quebrar as células de gordura localizada, reduzindo o volume do queixo duplo e redefinindo o contorno mandibular.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALLERY BEFORE/AFTER ══════════════════════ -->
+  <section id="resultados" class="soft">
+    <div class="wrap">
+      <div class="text-center">
+        <span class="eyebrow">Resultados Reais</span>
+        <h2 class="h2">Transformações com Harmonização</h2>
+        <p class="lead">Confira alguns exemplos dos resultados obtidos nos tratamentos faciais de nossos pacientes.</p>
+      </div>
+
+      <div class="tabs-wrapper">
+        <div class="tabs-nav">
+          <button class="tab-btn active" onclick="switchTab('labial-rino')">Lábios & Rinomodelação</button>
+          <button class="tab-btn" onclick="switchTab('botox-papada')">Botox & Lipo de Papada</button>
+          <button class="tab-btn" onclick="switchTab('casos-gerais')">Casos Clínicos</button>
+        </div>
+
+        <div class="tabs-content">
+          <!-- Tab 1: Lábios & Rinomodelação -->
+          <div id="tab-labial-rino" class="tab-pane active">
+            <div class="gallery-grid columns-3">
+              <div class="gallery-card">
+                <div class="gallery-media ratio-1-1">
+                  <img src="https://drapatricianogueira.com.br/wp-content/uploads/2023/10/1.jpg" alt="Resultado antes e depois de preenchimento labial com acido hialurônico" width="457" height="457" loading="lazy" />
+                </div>
+                <div class="gallery-label">
+                  <span>📷</span> Preenchimento labial (Caso 1)
+                </div>
+              </div>
+
+              <div class="gallery-card">
+                <div class="gallery-media ratio-1-1">
+                  <img src="https://drapatricianogueira.com.br/wp-content/uploads/2023/12/casos_site2.png" alt="Rinomodelação com acido hialurônico" width="500" height="500" loading="lazy" />
+                </div>
+                <div class="gallery-label">
+                  <span>📷</span> Rinomodelação clínica
+                </div>
+              </div>
+
+              <div class="gallery-card">
+                <div class="gallery-media ratio-1-1">
+                  <img src="https://drapatricianogueira.com.br/wp-content/uploads/2023/11/labios.webp" alt="Preenchimento labial em Porto Velho" width="600" height="600" loading="lazy" />
+                </div>
+                <div class="gallery-label">
+                  <span>📷</span> Preenchimento labial (Caso 2)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Botox & Lipo de Papada -->
+          <div id="tab-botox-papada" class="tab-pane">
+            <div class="gallery-grid columns-2">
+              <div class="gallery-card">
+                <div class="gallery-media ratio-16-9">
+                  <img src="https://drapatricianogueira.com.br/wp-content/uploads/2023/10/7.jpg" alt="Resultado antes e depois de procedimento de aplicação de botox" width="900" height="506" loading="lazy" />
+                </div>
+                <div class="gallery-label">
+                  <span>📷</span> Aplicação de Botox (Toxina Botulínica)
+                </div>
+              </div>
+
+              <div class="gallery-card">
+                <div class="gallery-media ratio-16-9">
+                  <img src="https://drapatricianogueira.com.br/wp-content/uploads/2023/10/4.jpg" alt="Resultado antes e depois de lipo de papada" width="900" height="506" loading="lazy" />
+                </div>
+                <div class="gallery-label">
+                  <span>📷</span> Lipo de papada enzimática
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Casos Gerais -->
+          <div id="tab-casos-gerais" class="tab-pane">
+            <div class="gallery-grid columns-2">
+              <div class="gallery-card">
+                <div class="gallery-media ratio-16-9">
+                  <img src="https://drapatricianogueira.com.br/wp-content/uploads/2023/10/5.jpg" alt="Casos clínicos harmonização facial 1" width="900" height="506" loading="lazy" />
+                </div>
+                <div class="gallery-label">
+                  <span>📷</span> Harmonização Facial - Caso Clínico 1
+                </div>
+              </div>
+
+              <div class="gallery-card">
+                <div class="gallery-media ratio-16-9">
+                  <img src="https://drapatricianogueira.com.br/wp-content/uploads/2023/10/3.jpg" alt="Casos clínicos harmonização facial 2" width="900" height="506" loading="lazy" />
+                </div>
+                <div class="gallery-label">
+                  <span>📷</span> Harmonização Facial - Caso Clínico 2
+                </div>
+              </div>
+
+              <div class="gallery-card">
+                <div class="gallery-media ratio-16-9">
+                  <img src="https://drapatricianogueira.com.br/wp-content/uploads/2023/10/2.jpg" alt="Casos clínicos harmonização facial 3" width="900" height="506" loading="lazy" />
+                </div>
+                <div class="gallery-label">
+                  <span>📷</span> Harmonização Facial - Caso Clínico 3
+                </div>
+              </div>
+
+              <div class="gallery-card">
+                <div class="gallery-media ratio-16-9">
+                  <img src="https://drapatricianogueira.com.br/wp-content/uploads/2023/10/6.jpg" alt="Casos clínicos harmonização facial 4" width="900" height="506" loading="lazy" />
+                </div>
+                <div class="gallery-label">
+                  <span>📷</span> Harmonização Facial - Caso Clínico 4
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ SECTION ══════════════════════════════ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="text-center">
+        <span class="eyebrow">Dúvidas Frequentes</span>
+        <h2 class="h2">Principais Dúvidas Resolvidas</h2>
+        <p class="lead">Sabemos que muitas pessoas têm dúvidas e preocupações ao considerar tratamentos estéticos faciais. Aqui, vamos esclarecer algumas das principais objeções:</p>
+      </div>
+
+      <div class="faq-wrap">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            1. Os tratamentos são dolorosos?
+            <span class="arrow">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Os avanços na estética permitem que os tratamentos sejam realizados com o mínimo de desconforto possível. Utilizamos técnicas modernas e anestesia local para garantir a sua comodidade durante o procedimento.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            2. Qual o tempo de recuperação?
+            <span class="arrow">+</span>
+          </button>
+          <div class="faq-a">
+            <p>O tempo de recuperação pode variar dependendo do tratamento realizado. No entanto, trabalhamos para minimizar o tempo de recuperação e garantir uma recuperação rápida e eficiente.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            3. Os resultados são duradouros?
+            <span class="arrow">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Nossos tratamentos são projetados para proporcionar resultados duradouros. Utilizamos materiais de alta qualidade e técnicas avançadas para garantir que o resultado final seja bonito, natural e duradouro.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA SECTION ══════════════════════════════ -->
+  <section class="cta-container soft">
+    <div class="wrap">
+      <div class="cta-card">
+        <h2>Pronta(o) para Realçar a Sua Beleza Natural?</h2>
+        <p>Agende uma avaliação personalizada com a Dra. Patricia Nogueira e descubra o plano ideal de Harmonização Facial para o seu rosto.</p>
+        <a class="btn btn-wa" href="https://wa.me/5569992027233?text=Olá! Vim pelo site e gostaria de agendar uma avaliação para Harmonização Facial." target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle; margin-right:4px;">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Agendar pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════ -->
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark">PN</div>
+          <div class="logo-txt">
+            <b style="color:#fff">Dra. Patricia Nogueira</b>
+            <span>Implantodontia · CRO-RO 1714</span>
+          </div>
+        </div>
+        <p>Acreditamos na importância de um atendimento personalizado, pautado na ética, competência técnica e sensibilidade humana.</p>
+        <div class="footer-socials">
+          <a class="social-btn" href="https://www.instagram.com/drapatricianogueiranm/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+            </svg>
+          </a>
+          <a class="social-btn" href="https://www.facebook.com/drapatricianogueira" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Links Úteis</h3>
+        <ul class="footer-links">
+          <li><a href="/#servicos">Áreas de Atuação</a></li>
+          <li><a href="#resultados">Casos Reais</a></li>
+          <li><a href="/#sobre">Dra. Patricia</a></li>
+          <li><a href="/#depoimentos">Depoimentos</a></li>
+          <li><a href="/#endereco">Localização</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Subpáginas</h3>
+        <ul class="footer-links">
+          <li><a href="/implante-dentario-em-porto-velho/">Implante Dentário</a></li>
+          <li><a href="/harmonizacao-facial/">Harmonização Facial</a></li>
+          <li><a href="/odontologia-estetica/">Odontologia Estética</a></li>
+          <li><a href="/odontologia-geral/">Odontologia Geral</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap footer-copy">
+      <span>&copy; 2026 Dra. Patricia Nogueira · Porto Velho - RO · Todos os direitos reservados.</span>
+      <a href="/politica-de-privacidade/">Política de Privacidade</a>
+    </div>
+  </footer>
+
+  <!-- ═══ MOBILE BOTTOM FIXED BAR ═══════════════════ -->
+  <div class="mobile-bar">
+    <a class="btn btn-ghost" href="tel:5569992027233">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:4px;">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      Ligar
+    </a>
+    <a class="btn btn-wa" href="https://wa.me/5569992027233?text=Olá! Gostaria de agendar uma avaliação para Harmonização Facial." target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle; margin-right:4px;">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <!-- ═══ JAVASCRIPT ════════════════════════════════ -->
+  <script>
+    // Header scrolled state
+    const siteHeader = document.getElementById('siteHeader');
+    const onScroll = () => {
+      siteHeader.classList.toggle('scrolled', window.scrollY > 30);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Results Tab Switcher
+    function switchTab(tabId) {
+      // Deactivate all buttons and panes
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+
+      // Activate selected button and pane
+      const eventTarget = event.currentTarget;
+      if (eventTarget) {
+        eventTarget.classList.add('active');
+      }
+      const targetPane = document.getElementById(`tab-${tabId}`);
+      if (targetPane) {
+        targetPane.classList.add('active');
+      }
+    }
+
+    // FAQ Accordion
+    function toggleFaq(btn) {
+      const item = btn.parentNode;
+      const isOpen = item.classList.contains('open');
+
+      // Close all items
+      document.querySelectorAll('.faq-item').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-a').style.maxHeight = null;
+      });
+
+      // Toggle current item
+      if (!isOpen) {
+        item.classList.add('open');
+        const answer = item.querySelector('.faq-a');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    }
+  </script>
+</body>
+
+</html>

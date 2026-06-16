@@ -1,0 +1,2228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Implante Dentário em Porto Velho | Dra. Patricia Nogueira</title>
+  <meta name="description"
+    content="Implante dentário em Porto Velho com a Dra. Patricia Nogueira. +16 anos de experiência, +5.000 pacientes. Agende sua avaliação — gratuita por tempo limitado." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* ─── Reset & Base ─────────────────────────────── */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #231C2E;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img,
+    svg {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    /* ─── Tokens (paleta lilás da Dra. Patricia) ──── */
+    :root {
+      --plum-950: #1C1726;
+      --plum-900: #2E283D;
+      /* lilac-900 */
+      --plum-850: #342D45;
+      --plum-800: #3E3651;
+      --lilac-700: #574A75;
+      --lilac-600: #6E5E91;
+      /* primária */
+      --lilac-500: #8A77B0;
+      --lilac-400: #A892C4;
+      --lilac-300: #C5B6DC;
+      /* destaque sobre fundo escuro */
+      --lilac-tint: #EFEAF5;
+      --green: #25D366;
+      --green-dk: #1ebe57;
+      --ink: #231C2E;
+      --slate: #6B6478;
+      --slate-2: #8B84A0;
+      --line: #E9E4F0;
+      --bg-soft: #F6F3FB;
+      --radius: 16px;
+      --radius-sm: 10px;
+    }
+
+    /* ─── Layout helpers ──────────────────────────── */
+    .wrap {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 76px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      font-size: .76rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--lilac-600);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 28px;
+      height: 2px;
+      background: var(--lilac-600);
+    }
+
+    .eyebrow.on-dark {
+      color: var(--lilac-300);
+    }
+
+    .eyebrow.on-dark::before {
+      background: var(--lilac-300);
+    }
+
+    .h2 {
+      font-size: clamp(1.65rem, 3.4vw, 2.45rem);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      line-height: 1.12;
+      color: var(--ink);
+    }
+
+    .h2.on-dark {
+      color: #fff;
+    }
+
+    .lead {
+      color: var(--slate);
+      font-size: 1.02rem;
+      margin-top: 14px;
+      max-width: 46ch;
+    }
+
+    .lead.on-dark {
+      color: rgba(255, 255, 255, .74);
+    }
+
+    /* ─── Buttons ─────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 15px 26px;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      white-space: nowrap;
+    }
+
+    .btn:active {
+      transform: scale(.98);
+    }
+
+    .btn-primary {
+      background: var(--lilac-600);
+      color: #fff;
+      box-shadow: 0 10px 26px rgba(110, 94, 145, .36);
+    }
+
+    .btn-primary:hover {
+      background: var(--lilac-700);
+      transform: translateY(-1px);
+    }
+
+    .btn-wa {
+      background: var(--green);
+      color: #fff;
+      box-shadow: 0 8px 22px rgba(37, 211, 102, .32);
+    }
+
+    .btn-wa:hover {
+      background: var(--green-dk);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, .06);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, .24);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, .13);
+    }
+
+    .btn-light {
+      background: #fff;
+      color: var(--plum-900);
+    }
+
+    .btn-block {
+      width: 100%;
+    }
+
+    .btn-sm {
+      padding: 11px 20px;
+      font-size: .9rem;
+    }
+
+    /* ─── Header (transparente → sólido ao rolar) ─── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: transparent;
+      transition: background .3s ease, box-shadow .3s ease;
+    }
+
+    header.scrolled {
+      background: rgba(46, 40, 61, .92);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, .25);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: #fff;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--lilac-500), var(--lilac-300));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 1.05rem;
+      color: var(--plum-900);
+      letter-spacing: -.5px;
+      box-shadow: 0 4px 14px rgba(138, 119, 176, .45);
+    }
+
+    .logo-txt b {
+      font-size: .98rem;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -.01em;
+      display: block;
+    }
+
+    .logo-txt span {
+      font-size: .7rem;
+      color: rgba(255, 255, 255, .6);
+      font-weight: 500;
+    }
+
+    /* Botão Agendar — VERDE PULSANTE */
+    .btn-book {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 22px;
+      font-size: .9rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, .5);
+      animation: pulseGreen 2s infinite;
+      transition: background .2s, transform .15s;
+    }
+
+    .btn-book:hover {
+      background: var(--green-dk);
+      transform: translateY(-1px);
+    }
+
+    .btn-book .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    @keyframes pulseGreen {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, .5);
+      }
+
+      70% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    /* ─── HERO ────────────────────────────────────── */
+    .hero {
+      position: relative;
+      margin-top: -68px;
+      padding-top: 124px;
+      /* hero passa atrás do header transparente */
+      background:
+        radial-gradient(120% 90% at 85% 0%, rgba(138, 119, 176, .45) 0%, rgba(138, 119, 176, 0) 55%),
+        radial-gradient(80% 70% at 0% 100%, rgba(110, 94, 145, .32) 0%, rgba(110, 94, 145, 0) 60%),
+        linear-gradient(165deg, var(--plum-900) 0%, var(--plum-950) 100%);
+      color: #fff;
+      padding-bottom: 96px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .offer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: rgba(197, 182, 220, .14);
+      border: 1px solid rgba(197, 182, 220, .4);
+      color: var(--lilac-300);
+      font-size: .82rem;
+      font-weight: 700;
+      padding: 7px 15px;
+      border-radius: 50px;
+      margin-bottom: 22px;
+    }
+
+    .offer-pill s {
+      opacity: .65;
+      font-weight: 600;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.1rem, 5.4vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -.025em;
+      line-height: 1.07;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--lilac-300);
+    }
+
+    .hero p {
+      color: rgba(255, 255, 255, .76);
+      font-size: 1.06rem;
+      max-width: 34em;
+      margin-bottom: 30px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 18px;
+      font-size: .86rem;
+      color: rgba(255, 255, 255, .62);
+    }
+
+    .hero-trust span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-trust span::before {
+      content: '✓';
+      color: var(--lilac-300);
+      font-weight: 800;
+    }
+
+    /* Mockup do vídeo/foto no hero */
+    .hero-media {
+      position: relative;
+    }
+
+    .device {
+      position: relative;
+      margin: 0 auto;
+      max-width: 320px;
+      width: 100%;
+      aspect-ratio: 9/16;
+      border-radius: 30px;
+      background: linear-gradient(160deg, #2c2640, #181323);
+      border: 1px solid rgba(255, 255, 255, .12);
+      box-shadow: 0 40px 80px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .06);
+      padding: 12px;
+      overflow: hidden;
+    }
+
+    .device-screen {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(70% 50% at 50% 35%, rgba(138, 119, 176, .45), rgba(138, 119, 176, 0) 70%),
+        linear-gradient(160deg, #4a3f68 0%, #221b33 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .play-btn {
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .92);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    }
+
+    .play-btn::after {
+      content: '';
+      border-left: 18px solid var(--plum-900);
+      border-top: 11px solid transparent;
+      border-bottom: 11px solid transparent;
+      margin-left: 4px;
+    }
+
+    .device-caption {
+      position: absolute;
+      left: 14px;
+      bottom: 52px;
+      right: 14px;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: -.01em;
+      line-height: 1.15;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+    }
+
+    .device-caption small {
+      display: block;
+      font-weight: 500;
+      font-size: .72rem;
+      opacity: .82;
+      margin-top: 5px;
+    }
+
+    .device-bar {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 30px;
+      height: 4px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, .25);
+    }
+
+    .device-bar::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 38%;
+      border-radius: 4px;
+      background: var(--lilac-400);
+    }
+
+    .device-tag {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #fff;
+      color: var(--plum-900);
+      font-size: .72rem;
+      font-weight: 700;
+      padding: 7px 12px;
+      border-radius: 50px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .3);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 2;
+    }
+
+    .device-tag .ic {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    /* ─── Stats card (overlap) ───────────────────── */
+    .stats-card {
+      position: relative;
+      z-index: 5;
+      margin-top: -56px;
+      background: var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 24px 60px rgba(46, 40, 61, .18);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1px;
+      overflow: hidden;
+    }
+
+    .stat {
+      padding: 24px;
+      background: #fff;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--ink);
+      letter-spacing: -.02em;
+      line-height: 1;
+    }
+
+    .stat strong em {
+      color: var(--lilac-600);
+      font-style: normal;
+    }
+
+    .stat span {
+      display: block;
+      font-size: .82rem;
+      color: var(--slate);
+      margin-top: 8px;
+      line-height: 1.4;
+    }
+
+    /* ─── Split (heading | content) ──────────────── */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .split-head {
+      align-self: start;
+    }
+
+    /* ─── Listas numeradas ───────────────────────── */
+    .nlist {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nrow {
+      display: flex;
+      gap: 22px;
+      padding: 24px 0;
+      border-top: 1px solid var(--line);
+      align-items: flex-start;
+    }
+
+    .nrow:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .nrow .nnum {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--lilac-300);
+      min-width: 48px;
+      line-height: 1;
+      letter-spacing: -.02em;
+    }
+
+    .nrow h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 5px;
+    }
+
+    .nrow p {
+      font-size: .93rem;
+      color: var(--slate);
+    }
+
+    .nlist.accent .nnum {
+      color: var(--lilac-500);
+    }
+
+    /* ─── Faixa lilás ────────────────────────────── */
+    .band {
+      background:
+        radial-gradient(90% 140% at 100% 0%, rgba(255, 255, 255, .16), rgba(255, 255, 255, 0) 50%),
+        linear-gradient(120deg, var(--lilac-500) 0%, var(--lilac-700) 100%);
+      color: #fff;
+    }
+
+    .band-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .band h2 {
+      font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      line-height: 1.18;
+    }
+
+    .band-line {
+      width: 44px;
+      height: 3px;
+      background: rgba(255, 255, 255, .7);
+      margin-bottom: 22px;
+    }
+
+    /* ─── Imagem full-width (mockup) ─────────────── */
+    .full-img {
+      padding: 0;
+    }
+
+    .img-mock {
+      position: relative;
+      width: 100%;
+      background:
+        radial-gradient(120% 120% at 20% 0%, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0) 55%),
+        linear-gradient(135deg, #3b3357 0%, #221b33 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .full-img .img-mock {
+      height: 340px;
+    }
+
+    .img-mock svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .img-mock .mock-tag {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      background: rgba(28, 23, 38, .78);
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      backdrop-filter: blur(3px);
+    }
+
+    .img-mock .mock-tag::before {
+      content: '📷';
+    }
+
+    /* ─── Tipos de implante ──────────────────────── */
+    .types-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 40px;
+    }
+
+    .type {
+      position: relative;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px 26px;
+      background: #fff;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .type:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(46, 40, 61, .12);
+    }
+
+    .type-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .type-ico {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: var(--lilac-tint);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .type-ico svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .type-idx {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--line);
+      letter-spacing: -.02em;
+    }
+
+    .type h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .type p {
+      font-size: .92rem;
+      color: var(--slate);
+    }
+
+    .type.featured {
+      background: linear-gradient(165deg, var(--plum-800), var(--plum-900));
+      border-color: transparent;
+      color: #fff;
+      box-shadow: 0 26px 50px rgba(46, 40, 61, .36);
+    }
+
+    .type.featured .type-ico {
+      background: rgba(255, 255, 255, .12);
+    }
+
+    .type.featured .type-idx {
+      color: rgba(255, 255, 255, .28);
+    }
+
+    .type.featured p {
+      color: rgba(255, 255, 255, .74);
+    }
+
+    .type-badge {
+      position: absolute;
+      top: 20px;
+      right: 26px;
+      background: var(--lilac-500);
+      color: #fff;
+      font-size: .66rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: 4px 10px;
+      border-radius: 50px;
+    }
+
+    /* ─── Por que / checklist ────────────────────── */
+    .checks {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      margin-top: 38px;
+    }
+
+    .check {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .check-ic {
+      min-width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--lilac-tint);
+      color: var(--lilac-600);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: .95rem;
+    }
+
+    .check h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .check p {
+      font-size: .9rem;
+      color: var(--slate);
+    }
+
+    /* ─── Localização ────────────────────────────── */
+    .loc {
+      background: var(--bg-soft);
+    }
+
+    .loc-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-top: 38px;
+    }
+
+    .loc-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    .loc-row {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .loc-row:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .loc-ic {
+      min-width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      background: var(--lilac-tint);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    .loc-row h4 {
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+
+    .loc-row p {
+      font-size: .9rem;
+      color: var(--slate);
+    }
+
+    .loc-row a {
+      color: var(--lilac-600);
+      font-weight: 600;
+    }
+
+    .loc-map {
+      border-radius: var(--radius);
+      overflow: hidden;
+      min-height: 280px;
+      border: 1px solid var(--line);
+    }
+
+    .loc-map .img-mock {
+      height: 100%;
+      min-height: 280px;
+    }
+
+    /* ─── FAQ ────────────────────────────────────── */
+    .faq-wrap {
+      max-width: 820px;
+      margin: 40px auto 0;
+    }
+
+    .faq-item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: #fff;
+      transition: box-shadow .2s;
+    }
+
+    .faq-item.open {
+      box-shadow: 0 10px 30px rgba(46, 40, 61, .1);
+      border-color: var(--lilac-400);
+    }
+
+    .faq-q {
+      width: 100%;
+      text-align: left;
+      padding: 20px 22px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .faq-q .arrow {
+      min-width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--lilac-tint);
+      color: var(--lilac-600);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: transform .25s, background .2s, color .2s;
+    }
+
+    .faq-item.open .arrow {
+      transform: rotate(45deg);
+      background: var(--lilac-600);
+      color: #fff;
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease;
+    }
+
+    .faq-a p {
+      padding: 0 22px 20px;
+      font-size: .93rem;
+      color: var(--slate);
+      line-height: 1.7;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 340px;
+    }
+
+    /* ─── CTA final + formulário ─────────────────── */
+    .cta {
+      background:
+        radial-gradient(90% 120% at 100% 0%, rgba(138, 119, 176, .4), rgba(138, 119, 176, 0) 55%),
+        linear-gradient(160deg, var(--plum-900), var(--plum-950));
+      color: #fff;
+    }
+
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      line-height: 1.14;
+      margin-bottom: 16px;
+    }
+
+    .cta-text p {
+      color: rgba(255, 255, 255, .74);
+      font-size: 1.02rem;
+      margin-bottom: 22px;
+    }
+
+    .cta-perks {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .cta-perk {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: .95rem;
+      color: rgba(255, 255, 255, .88);
+    }
+
+    .cta-perk .ic {
+      color: var(--lilac-300);
+      font-weight: 800;
+    }
+
+    .form-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px 28px;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, .4);
+      color: var(--ink);
+    }
+
+    .form-card .fc-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--lilac-tint);
+      color: var(--lilac-700);
+      font-size: .74rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+    }
+
+    .form-card h3 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -.01em;
+      margin-bottom: 6px;
+    }
+
+    .form-card .fc-sub {
+      font-size: .9rem;
+      color: var(--slate);
+      margin-bottom: 20px;
+    }
+
+    .form-card .fc-sub s {
+      color: var(--slate-2);
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    .field label {
+      display: block;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      font-family: inherit;
+      font-size: .95rem;
+      padding: 13px 14px;
+      border: 1.5px solid var(--line);
+      border-radius: var(--radius-sm);
+      color: var(--ink);
+      background: #fff;
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    .field input:focus,
+    .field select:focus {
+      outline: none;
+      border-color: var(--lilac-600);
+      box-shadow: 0 0 0 3px rgba(110, 94, 145, .16);
+    }
+
+    .field input::placeholder {
+      color: #a99fb8;
+    }
+
+    .form-privacy {
+      font-size: .73rem;
+      color: var(--slate);
+      text-align: center;
+      margin-top: 13px;
+      line-height: 1.5;
+    }
+
+    .lead-success {
+      display: none;
+      text-align: center;
+      padding: 14px 6px 6px;
+    }
+
+    [data-leadform].done .lead-fields {
+      display: none;
+    }
+
+    [data-leadform].done .lead-success {
+      display: block;
+    }
+
+    .success-check {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #e8f8ee;
+      color: var(--green-dk);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+      margin: 0 auto 14px;
+    }
+
+    .lead-success h4 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    .lead-success p {
+      font-size: .9rem;
+      color: var(--slate);
+      line-height: 1.6;
+    }
+
+    /* ─── Footer ─────────────────────────────────── */
+    footer {
+      background: var(--plum-950);
+      color: rgba(255, 255, 255, .6);
+      padding: 44px 0 30px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer-inner .logo-txt span {
+      color: rgba(255, 255, 255, .5);
+    }
+
+    footer p {
+      font-size: .82rem;
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: var(--lilac-300);
+    }
+
+    .footer-copy {
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      margin-top: 28px;
+      padding-top: 20px;
+      font-size: .76rem;
+      color: rgba(255, 255, 255, .45);
+    }
+
+    /* ─── Barra mobile fixa ──────────────────────── */
+    .mobile-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 90;
+      display: none;
+      gap: 10px;
+      padding: 11px 16px;
+      background: rgba(28, 23, 38, .96);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .mobile-bar .btn {
+      padding: 13px 18px;
+      font-size: .95rem;
+    }
+
+    .mobile-wa {
+      min-width: 52px;
+      padding: 13px !important;
+    }
+
+    /* ─── Modal / Popup ──────────────────────────── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(28, 23, 38, .72);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .25s, visibility .25s;
+    }
+
+    .modal-overlay.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal {
+      background: #fff;
+      width: 100%;
+      max-width: 420px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, .4);
+      transform: translateY(16px) scale(.98);
+      transition: transform .28s cubic-bezier(.16, 1, .3, 1);
+      max-height: 92vh;
+      overflow-y: auto;
+    }
+
+    .modal-overlay.open .modal {
+      transform: translateY(0) scale(1);
+    }
+
+    .modal-head {
+      background: linear-gradient(160deg, var(--plum-800), var(--plum-900));
+      color: #fff;
+      padding: 28px 24px 24px;
+      position: relative;
+      text-align: center;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .15);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .2s;
+    }
+
+    .modal-close:hover {
+      background: rgba(255, 255, 255, .3);
+    }
+
+    .offer-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--lilac-500);
+      color: #fff;
+      font-size: .68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      padding: 5px 12px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+    }
+
+    .modal-head h3 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .modal-head h3 span {
+      color: var(--lilac-300);
+    }
+
+    .price-anchor {
+      font-size: .9rem;
+      opacity: .92;
+    }
+
+    .price-anchor s {
+      opacity: .65;
+    }
+
+    .price-anchor strong {
+      color: var(--lilac-300);
+    }
+
+    .modal-body {
+      padding: 22px 24px 24px;
+    }
+
+    .scarcity {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      background: var(--lilac-tint);
+      border: 1px solid #ded2ee;
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin-bottom: 18px;
+      font-size: .8rem;
+      color: var(--lilac-700);
+      font-weight: 600;
+    }
+
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 2.5px solid rgba(255, 255, 255, .4);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ─── Galeria de resultados (carrossel) ──────── */
+    .gallery {
+      background: var(--bg-soft);
+      overflow: hidden;
+    }
+
+    .gallery .head-center {
+      text-align: center;
+    }
+
+    .gallery .head-center .eyebrow {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .gallery .lead {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .marquee {
+      margin-top: 44px;
+      overflow: hidden;
+      -webkit-mask: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+      mask: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: scrollX 48s linear infinite;
+    }
+
+    .marquee:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes scrollX {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .g-card {
+      position: relative;
+      flex: 0 0 auto;
+      margin-right: 18px;
+      width: clamp(230px, 68vw, 290px);
+      height: 360px;
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 16px 38px rgba(46, 40, 61, .18);
+    }
+
+    .g-card .smile {
+      width: 92px;
+      height: 92px;
+      opacity: .92;
+    }
+
+    .g-label {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 18px 16px 14px;
+      color: #fff;
+      font-size: .82rem;
+      font-weight: 600;
+      background: linear-gradient(to top, rgba(28, 23, 38, .72), rgba(28, 23, 38, 0));
+    }
+
+    .g-label::before {
+      content: '📷 ';
+      opacity: .85;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .marquee-track {
+        animation: none;
+      }
+    }
+
+    /* ═══ DESKTOP ═══════════════════════════════════ */
+    @media (min-width: 560px) {
+      .stats-card {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 720px) {
+      .types-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .checks {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 44px;
+      }
+
+      .loc-grid {
+        grid-template-columns: 1.05fr 1fr;
+      }
+    }
+
+    @media (min-width: 900px) {
+      section {
+        padding: 92px 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1.05fr .95fr;
+        gap: 50px;
+      }
+
+      .split {
+        grid-template-columns: .85fr 1.15fr;
+        gap: 56px;
+      }
+
+      .split-head {
+        position: sticky;
+        top: 100px;
+      }
+
+      .band-grid {
+        grid-template-columns: 1.4fr .6fr;
+        gap: 40px;
+      }
+
+      .full-img .img-mock {
+        height: 460px;
+      }
+
+      .cta-grid {
+        grid-template-columns: 1fr .82fr;
+        gap: 56px;
+      }
+    }
+
+    @media (max-width: 880px) {
+      .mobile-bar {
+        display: flex;
+      }
+
+      body {
+        padding-bottom: 72px;
+      }
+    }
+
+    @media (max-width: 460px) {
+      .logo-txt span {
+        display: none;
+      }
+
+      .btn-book {
+        padding: 10px 16px;
+        font-size: .84rem;
+      }
+
+      .wrap {
+        padding: 0 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══ HEADER ════════════════════════════════════ -->
+  <header id="siteHeader">
+    <div class="wrap header-inner">
+      <div class="logo">
+        <div class="logo-mark">PN</div>
+        <div class="logo-txt">
+          <b>Dra. Patricia Nogueira</b>
+          <span>Implantodontia · Porto Velho - RO</span>
+        </div>
+      </div>
+      <button class="btn-book" onclick="openBookingModal()">
+        <span class="dot"></span> Agendar avaliação
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <span class="offer-pill">★ 1ª avaliação gratuita <s>R$ 150</s></span>
+        <h1>Implante dentário em<br><span>Porto Velho-RO</span></h1>
+        <p>Implantes planejados com tomografia, pela Dra. Patricia Nogueira — mais de 16 anos cuidando do sorriso de
+          Porto Velho.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary" onclick="openBookingModal()">Quero agendar minha avaliação →</button>
+          <a class="btn btn-ghost"
+            href="https://wa.me/5569992027233?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20implante%20dent%C3%A1rio."
+            target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+        <div class="hero-trust">
+          <span>+16 anos de experiência</span>
+          <span>+5.000 pacientes</span>
+          <span>Profissional experiente</span>
+        </div>
+      </div>
+
+      <!-- MOCKUP — substituir por vídeo/foto real da Dra. Patricia -->
+      <div class="hero-media">
+        <div class="device">
+          <div class="device-tag"><span class="ic"></span> Resultado real</div>
+          <div class="device-screen">
+            <div class="play-btn"></div>
+            <div class="device-caption">Dente fixo, bem seguro<small>Implante com técnica e biossegurança</small></div>
+            <div class="device-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS ═════════════════════════════════════ -->
+  <div class="wrap">
+    <div class="stats-card">
+      <div class="stat"><strong>16 <em>anos</em></strong><span>de clínica em Porto Velho</span></div>
+      <div class="stat"><strong>+5.000</strong><span>pacientes atendidos</span></div>
+      <div class="stat"><strong>5 <em>★</em></strong><span>avaliação no Google</span></div>
+    </div>
+  </div>
+
+  <!-- ═══ DOR / PROBLEMA ════════════════════════════ -->
+  <section>
+    <div class="wrap split">
+      <div class="split-head">
+        <span class="eyebrow">Você se identifica?</span>
+        <h2 class="h2">A falta de um dente muda mais do que o sorriso.</h2>
+        <p class="lead">Veja o que o implante dentário resolve de vez — no corpo e na autoestima.</p>
+      </div>
+      <div class="nlist">
+        <div class="nrow">
+          <div class="nnum">01</div>
+          <div>
+            <h3>Mastigação comprometida</h3>
+            <p>Você evita alimentos que gosta e força o outro lado da boca, prejudicando a digestão.</p>
+          </div>
+        </div>
+        <div class="nrow">
+          <div class="nnum">02</div>
+          <div>
+            <h3>Insegurança ao falar e sorrir</h3>
+            <p>A falta na frente da boca tira a confiança em momentos sociais e profissionais.</p>
+          </div>
+        </div>
+        <div class="nrow">
+          <div class="nnum">03</div>
+          <div>
+            <h3>Prótese móvel que incomoda</h3>
+            <p>Dentaduras se movem, machucam e pedem cuidado todo dia. O implante é fixo.</p>
+          </div>
+        </div>
+        <div class="nrow">
+          <div class="nnum">04</div>
+          <div>
+            <h3>Perda óssea silenciosa</h3>
+            <p>Quando o dente sai, o osso reabsorve e o rosto muda de formato com o tempo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FAIXA LILÁS ═══════════════════════════════ -->
+  <section class="band">
+    <div class="wrap band-grid">
+      <div>
+        <div class="band-line"></div>
+        <h2>Quanto antes você avalia, mais simples (e mais previsível) é o tratamento.</h2>
+      </div>
+      <div>
+        <button class="btn btn-light" onclick="openBookingModal()">Agendar avaliação →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ COMO FUNCIONA ══════════════════════════════ -->
+  <section>
+    <div class="wrap split">
+      <div class="split-head">
+        <span class="eyebrow">Passo a passo</span>
+        <h2 class="h2">Como funciona o implante com a Dra. Patricia</h2>
+        <p class="lead">Um processo seguro, planejado e sem dor — com anestesia local e acompanhamento do início ao fim.
+        </p>
+      </div>
+      <div class="nlist accent">
+        <div class="nrow">
+          <div class="nnum">01</div>
+          <div>
+            <h3>Avaliação</h3>
+            <p>A Dra. examina sua boca e seu histórico de saúde para um diagnóstico preciso do seu caso.</p>
+          </div>
+        </div>
+        <div class="nrow">
+          <div class="nnum">02</div>
+          <div>
+            <h3>Planejamento do caso</h3>
+            <p>Definição da quantidade de implantes, tipo de prótese e cronograma — você sabe cada etapa antes de
+              começar.</p>
+          </div>
+        </div>
+        <div class="nrow">
+          <div class="nnum">03</div>
+          <div>
+            <h3>Cirurgia de instalação</h3>
+            <p>Procedimento feito na clínica, com anestesia local e protocolo de biossegurança. Rápido e sem dor.</p>
+          </div>
+        </div>
+        <div class="nrow">
+          <div class="nnum">04</div>
+          <div>
+            <h3>Prótese fixa</h3>
+            <p>Instalação do dente na arcada completa, em caso de protocolo, e acompanhamento de manutenção.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALERIA DE RESULTADOS ══════════════════════ -->
+  <section class="gallery">
+    <div class="wrap head-center">
+      <span class="eyebrow">Resultados reais</span>
+      <h2 class="h2">Sorrisos transformados pela Dra. Patricia</h2>
+      <p class="lead">Pacientes que voltaram a sorrir com implantes em Porto Velho.</p>
+    </div>
+    <!-- MOCKUP — substituir cada cartão por foto real do paciente (com autorização) -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <!-- conjunto 1 (6 fotos) -->
+        <figure class="g-card" style="background:linear-gradient(135deg,#c5b6dc,#8a77b0)"><svg class="smile"
+            viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 01</figcaption>
+        </figure>
+        <figure class="g-card" style="background:linear-gradient(135deg,#a892c4,#574a75)"><svg class="smile"
+            viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 02</figcaption>
+        </figure>
+        <figure class="g-card" style="background:linear-gradient(135deg,#8a77b0,#2e283d)"><svg class="smile"
+            viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 03</figcaption>
+        </figure>
+        <figure class="g-card" style="background:linear-gradient(135deg,#c5b6dc,#6e5e91)"><svg class="smile"
+            viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 04</figcaption>
+        </figure>
+        <figure class="g-card" style="background:linear-gradient(135deg,#6e5e91,#342d45)"><svg class="smile"
+            viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 05</figcaption>
+        </figure>
+        <figure class="g-card" style="background:linear-gradient(135deg,#a892c4,#8a77b0)"><svg class="smile"
+            viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 06</figcaption>
+        </figure>
+        <!-- conjunto 2 (cópia para loop contínuo) -->
+        <figure class="g-card" aria-hidden="true" style="background:linear-gradient(135deg,#c5b6dc,#8a77b0)"><svg
+            class="smile" viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 01</figcaption>
+        </figure>
+        <figure class="g-card" aria-hidden="true" style="background:linear-gradient(135deg,#a892c4,#574a75)"><svg
+            class="smile" viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 02</figcaption>
+        </figure>
+        <figure class="g-card" aria-hidden="true" style="background:linear-gradient(135deg,#8a77b0,#2e283d)"><svg
+            class="smile" viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 03</figcaption>
+        </figure>
+        <figure class="g-card" aria-hidden="true" style="background:linear-gradient(135deg,#c5b6dc,#6e5e91)"><svg
+            class="smile" viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 04</figcaption>
+        </figure>
+        <figure class="g-card" aria-hidden="true" style="background:linear-gradient(135deg,#6e5e91,#342d45)"><svg
+            class="smile" viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 05</figcaption>
+        </figure>
+        <figure class="g-card" aria-hidden="true" style="background:linear-gradient(135deg,#a892c4,#8a77b0)"><svg
+            class="smile" viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+            <path d="M28 40 q22 -18 44 0" />
+            <path d="M30 60 q20 22 40 0" />
+            <circle cx="38" cy="44" r="3" fill="#fff" stroke="none" />
+            <circle cx="62" cy="44" r="3" fill="#fff" stroke="none" />
+          </svg>
+          <figcaption class="g-label">Resultado real · Caso 06</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ IMAGEM FULL-WIDTH (mockup) ════════════════ -->
+  <section class="full-img">
+    <!-- MOCKUP — substituir por foto real do procedimento / ambiente clínico -->
+    <div class="img-mock">
+      <svg viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+        aria-label="Ambiente clínico">
+        <rect width="1200" height="460" fill="#2a2340" />
+        <g opacity=".5" stroke="#5a4d7e" stroke-width="2" fill="none">
+          <circle cx="600" cy="230" r="120" />
+          <circle cx="600" cy="230" r="180" />
+          <circle cx="600" cy="230" r="240" />
+        </g>
+        <g fill="none" stroke="#C5B6DC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
+          <path
+            d="M600 150 c-44 0 -68 28 -68 72 c0 36 12 60 24 88 c8 18 28 16 32 -4 l12 -40 12 40 c4 20 24 22 32 4 c12 -28 24 -52 24 -88 c0 -44 -24 -72 -68 -72 z"
+            fill="#3b3357" />
+          <line x1="600" y1="270" x2="600" y2="330" />
+          <line x1="566" y1="288" x2="634" y2="288" />
+        </g>
+        <g fill="#C5B6DC" opacity=".7">
+          <path d="M330 120 l7 18 18 7 -18 7 -7 18 -7 -18 -18 -7 18 -7 z" />
+          <path d="M880 300 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 z" />
+        </g>
+      </svg>
+      <span class="mock-tag">Procedimento real · ambiente clínico e biossegurança</span>
+    </div>
+  </section>
+
+  <!-- ═══ TIPOS DE IMPLANTE ══════════════════════════ -->
+  <section style="background:var(--bg-soft)">
+    <div class="wrap">
+      <span class="eyebrow">Soluções disponíveis</span>
+      <h2 class="h2">Existe um tipo de implante para o seu caso</h2>
+      <p class="lead">A Dra. Patricia avalia e indica o melhor protocolo para você.</p>
+      <div class="types-grid">
+        <div class="type">
+          <div class="type-top">
+            <div class="type-ico">
+              <svg viewBox="0 0 32 32" fill="none" stroke="#6E5E91" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M16 5 c-7 0 -10 4 -10 11 c0 6 2 9 4 13 c1.3 3 4.5 2.6 5 -.6 l1 -5 1 5 c.5 3.2 3.7 3.6 5 .6 c2 -4 4 -7 4 -13 c0 -7 -3 -11 -10 -11z" />
+              </svg>
+            </div>
+            <span class="type-idx">01</span>
+          </div>
+          <h3>Implante unitário</h3>
+          <p>Para a perda de um dente. Mantém os dentes vizinhos intactos, com resultado natural.</p>
+        </div>
+        <div class="type featured">
+          <span class="type-badge">Mais escolhido</span>
+          <div class="type-top">
+            <div class="type-ico">
+              <svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M5 11 q11 -7 22 0 q1 8 -4 10 q-7 -3 -14 0 q-5 -2 -4 -10z" />
+                <line x1="11" y1="9" x2="11" y2="20" />
+                <line x1="16" y1="8" x2="16" y2="21" />
+                <line x1="21" y1="9" x2="21" y2="20" />
+              </svg>
+            </div>
+            <span class="type-idx">02</span>
+          </div>
+          <h3>Prótese sobre implantes</h3>
+          <p>Para a perda de mais de um dente, sem desgastar dentes saudáveis. Estável e confortável.</p>
+        </div>
+        <div class="type">
+          <div class="type-top">
+            <div class="type-ico">
+              <svg viewBox="0 0 32 32" fill="none" stroke="#6E5E91" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 13 q12 -8 24 0 q1 9 -5 11 q-7 -3 -14 0 q-6 -2 -5 -11z" />
+                <circle cx="10" cy="12" r="1.6" fill="#6E5E91" />
+                <circle cx="16" cy="11" r="1.6" fill="#6E5E91" />
+                <circle cx="22" cy="12" r="1.6" fill="#6E5E91" />
+              </svg>
+            </div>
+            <span class="type-idx">03</span>
+          </div>
+          <h3>Protocolo (arcada completa)</h3>
+          <p>Quem usa dentadura pode ter todos os dentes fixos com 4 a 6 implantes. Carga imediata em casos
+            selecionados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ POR QUE A DRA. PATRICIA ═══════════════════ -->
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Por que escolher</span>
+      <h2 class="h2">Por que a Dra. Patricia</h2>
+      <div class="checks">
+        <div class="check">
+          <div class="check-ic">✓</div>
+          <div>
+            <h4>Atendimento humanizado</h4>
+            <p>Você não é um número. A Dra. ouve, explica e respeita o seu tempo.</p>
+          </div>
+        </div>
+        <div class="check">
+          <div class="check-ic">✓</div>
+          <div>
+            <h4>Planejamento personalizado</h4>
+            <p>Cada caso é avaliado individualmente para indicar o melhor protocolo.</p>
+          </div>
+        </div>
+        <div class="check">
+          <div class="check-ic">✓</div>
+          <div>
+            <h4>+16 anos de experiência</h4>
+            <p>Mais de 5.000 pacientes atendidos com materiais de alta qualidade.</p>
+          </div>
+        </div>
+        <div class="check">
+          <div class="check-ic">✓</div>
+          <div>
+            <h4>Ética e transparência</h4>
+            <p>Orçamento claro, sem surpresas. Você decide sabendo de tudo.</p>
+          </div>
+        </div>
+        <div class="check">
+          <div class="check-ic">✓</div>
+          <div>
+            <h4>Pagamento facilitado</h4>
+            <p>Condições que cabem no seu orçamento, definidas na avaliação.</p>
+          </div>
+        </div>
+        <div class="check">
+          <div class="check-ic">✓</div>
+          <div>
+            <h4>Referência em Porto Velho</h4>
+            <p>Atende na Região São Cristóvão, com fácil acesso e estacionamento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LOCALIZAÇÃO ═══════════════════════════════ -->
+  <section class="loc">
+    <div class="wrap">
+      <span class="eyebrow">Onde nos encontrar</span>
+      <h2 class="h2">A clínica da Dra. Patricia em Porto Velho</h2>
+      <p class="lead">Fácil acesso na Região São Cristóvão.</p>
+      <div class="loc-grid">
+        <div class="loc-card">
+          <div class="loc-row">
+            <div class="loc-ic">📍</div>
+            <div>
+              <h4>Endereço</h4>
+              <p>R. Brasília, 2525 CESPE - Sala 4<br />São Cristóvão, Porto Velho - RO</p>
+            </div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-ic">🕐</div>
+            <div>
+              <h4>Horário de atendimento</h4>
+              <p>Segunda a sexta: 08h–18h<br />Sábados: mediante agendamento</p>
+            </div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-ic">📞</div>
+            <div>
+              <h4>Contato</h4>
+              <p><a href="tel:5569992027233">(69) 9 9202-7233</a></p>
+            </div>
+          </div>
+          <div style="margin-top:20px"><button class="btn btn-primary btn-block" onclick="openBookingModal()">Agendar
+              minha avaliação</button></div>
+        </div>
+        <!-- MOCKUP — substituir pelo <iframe> do Google Maps -->
+        <div class="loc-map">
+          <div class="img-mock" style="background:#ece7f4">
+            <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+              aria-label="Mapa">
+              <rect width="500" height="300" fill="#ece7f4" />
+              <g stroke="#d6cce8" stroke-width="8" fill="none">
+                <path d="M-10 90 H510" />
+                <path d="M-10 200 H510" />
+                <path d="M150 -10 V310" />
+                <path d="M350 -10 V310" />
+              </g>
+              <path d="M-10 150 L150 90 L350 200 L510 130" stroke="#bfa9dd" stroke-width="12" fill="none" />
+              <rect x="50" y="30" width="70" height="40" rx="4" fill="#ddd2ee" />
+              <rect x="380" y="220" width="80" height="50" rx="4" fill="#ddd2ee" />
+              <g transform="translate(250,130)">
+                <path d="M0 36 c-18 -24 -28 -36 -28 -54 a28 28 0 1 1 56 0 c0 18 -10 30 -28 54z" fill="#6E5E91" />
+                <circle cx="0" cy="-20" r="10" fill="#fff" />
+              </g>
+            </svg>
+            <span class="mock-tag">Mapa · São Cristóvão, Porto Velho - RO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══════════════════════════════════════ -->
+  <section>
+    <div class="wrap" style="text-align:center">
+      <span class="eyebrow" style="margin-left:auto;margin-right:auto">Dúvidas frequentes</span>
+      <h2 class="h2">O que todo mundo pergunta antes de agendar</h2>
+    </div>
+    <div class="wrap">
+      <div class="faq-wrap">
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">O implante dói? <span
+              class="arrow">+</span></button>
+          <div class="faq-a">
+            <p>O procedimento é feito com anestesia local, então você não sente dor durante a cirurgia. Depois pode
+              haver leve desconforto por 2–3 dias, controlado com medicação simples.</p>
+          </div>
+        </div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Quanto tempo demora o tratamento? <span
+              class="arrow">+</span></button>
+          <div class="faq-a">
+            <p>Em média 3 a 6 meses, que é o tempo de osseointegração. Durante esse período você usa um dente
+              provisório. Em casos de carga imediata, o provisório é colocado no mesmo dia.</p>
+          </div>
+        </div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Sou diabético ou hipertenso, posso fazer?
+            <span class="arrow">+</span></button>
+          <div class="faq-a">
+            <p>Na maioria dos casos, sim — desde que a condição esteja controlada. A Dra. Patricia avalia
+              individualmente seu histórico de saúde e medicamentos antes de indicar o procedimento.</p>
+          </div>
+        </div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Uso dentadura há anos. Ainda dá pra fazer
+            protocolo? <span class="arrow">+</span></button>
+          <div class="faq-a">
+            <p>Sim. Mesmo com perda óssea, em muitos casos é possível preparar o osso e fixar a arcada com 4 a 6
+              implantes. A avaliação define o melhor caminho para o seu caso.</p>
+          </div>
+        </div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Como funciona o pagamento? <span
+              class="arrow">+</span></button>
+          <div class="faq-a">
+            <p>O valor depende do número de implantes e do tipo de prótese. Trabalhamos com parcelamento e a avaliação
+              define as condições. A 1ª avaliação é gratuita por tempo limitado — você não paga os R$150 da consulta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA FINAL + FORMULÁRIO ════════════════════ -->
+  <section class="cta">
+    <div class="wrap cta-grid">
+      <div class="cta-text">
+        <span class="eyebrow on-dark">Agende agora</span>
+        <h2>Agende sua avaliação com a Dra. Patricia</h2>
+        <p>Preencha ao lado e a clínica confirma o seu horário no período que for melhor pra você.</p>
+        <div class="cta-perks">
+          <div class="cta-perk"><span class="ic">★</span> 1ª avaliação gratuita (por tempo limitado)</div>
+          <div class="cta-perk"><span class="ic">✓</span> Planejamento personalizado do seu caso</div>
+          <div class="cta-perk"><span class="ic">✓</span> Atendimento humanizado, sem compromisso</div>
+        </div>
+      </div>
+
+      <div class="form-card" data-leadform>
+        <div class="lead-fields">
+          <span class="fc-badge">✓ 1ª avaliação gratuita</span>
+          <h3>Marque sua avaliação</h3>
+          <p class="fc-sub">A avaliação custa <s>R$ 150</s> — por tempo limitado, é gratuita.</p>
+          <form onsubmit="submitLead(event)">
+            <div class="field"><label for="cName">Nome completo *</label><input type="text" id="cName" name="name"
+                placeholder="Digite seu nome" required autocomplete="name" /></div>
+            <div class="field"><label for="cPhone">WhatsApp / Telefone *</label><input type="tel" id="cPhone"
+                name="phone" placeholder="(69) 9 0000-0000" required autocomplete="tel" inputmode="numeric"
+                oninput="maskPhone(this)" /></div>
+            <button type="submit" class="btn btn-primary btn-block">Quero minha avaliação gratuita</button>
+            <p class="form-privacy">🔒 Seus dados estão seguros. Entraremos em contato pelo WhatsApp para confirmar.</p>
+          </form>
+        </div>
+        <div class="lead-success">
+          <div class="success-check">✓</div>
+          <h4>Solicitação enviada!</h4>
+          <p>Recebemos seus dados. A equipe da Dra. Patricia entra em contato pelo WhatsApp em breve para confirmar a
+            sua avaliação gratuita.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════ -->
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="logo">
+        <div class="logo-mark">PN</div>
+        <div class="logo-txt"><b style="color:#fff">Dra. Patricia Nogueira</b><span>Implantodontia · CRO-RO 1714</span>
+        </div>
+      </div>
+      <p>
+        R. Brasília, 2525 CESPE - Sala 4, São Cristóvão<br />
+        Porto Velho - RO · (69) 9 9202-7233<br />
+        <a href="mailto:patricianogueiranm@gmail.com">patricianogueiranm@gmail.com</a>
+      </p>
+      <p class="footer-copy">© 2026 Dra. Patricia Nogueira · Porto Velho - RO · Todos os direitos reservados · <a
+          href="#">Política de Privacidade</a></p>
+    </div>
+  </footer>
+
+  <!-- ═══ BARRA MOBILE FIXA ═════════════════════════ -->
+  <div class="mobile-bar">
+    <button class="btn btn-primary" style="flex:1" onclick="openBookingModal()">Agendar avaliação</button>
+    <a class="btn btn-wa mobile-wa"
+      href="https://wa.me/5569992027233?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20implante%20dent%C3%A1rio."
+      target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- ═══ MODAL — AGENDAR AVALIAÇÃO ══════════════════ -->
+  <div class="modal-overlay" id="bookingOverlay" onclick="if(event.target===this)closeBookingModal()">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+      <div class="modal-head">
+        <button class="modal-close" onclick="closeBookingModal()" aria-label="Fechar">✕</button>
+        <span class="offer-badge">★ Oferta por tempo limitado</span>
+        <h3 id="bookingTitle">Sua 1ª avaliação é <span>gratuita</span></h3>
+        <p class="price-anchor">Você não paga os <s>R$ 150</s> da consulta — <strong>por tempo limitado</strong>.</p>
+      </div>
+      <div class="modal-body" data-leadform>
+        <div class="lead-fields">
+          <div class="scarcity"><span>⏳</span><span>Vagas limitadas esta semana — garanta a sua avaliação
+              gratuita.</span></div>
+          <form onsubmit="submitLead(event)">
+            <div class="field"><label for="mName">Nome completo</label><input type="text" id="mName" name="name"
+                placeholder="Digite seu nome" required autocomplete="name" /></div>
+            <div class="field"><label for="mPhone">WhatsApp / Telefone</label><input type="tel" id="mPhone" name="phone"
+                placeholder="(69) 9 0000-0000" required autocomplete="tel" inputmode="numeric"
+                oninput="maskPhone(this)" /></div>
+            <button type="submit" class="btn btn-primary btn-block">Quero minha avaliação gratuita</button>
+            <p class="form-privacy">🔒 Seus dados estão seguros. Entraremos em contato pelo WhatsApp para confirmar o
+              horário.</p>
+          </form>
+        </div>
+        <div class="lead-success">
+          <div class="success-check">✓</div>
+          <h4>Solicitação enviada!</h4>
+          <p>Recebemos seus dados. A equipe da Dra. Patricia vai entrar em contato pelo WhatsApp em breve para confirmar
+            a sua avaliação gratuita.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SCRIPTS ════════════════════════════════════ -->
+  <script>
+    /* Header: transparente no topo, sólido ao rolar */
+    const siteHeader = document.getElementById('siteHeader');
+    const onScroll = () => siteHeader.classList.toggle('scrolled', window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    /* ─── Modal ─── */
+    const overlay = document.getElementById('bookingOverlay');
+    function openBookingModal() {
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => document.getElementById('mName').focus(), 280);
+    }
+    function closeBookingModal() {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && overlay.classList.contains('open')) closeBookingModal();
+    });
+
+    /* Máscara de telefone BR */
+    function maskPhone(el) {
+      let v = el.value.replace(/\D/g, '').slice(0, 11);
+      if (v.length > 6) v = `(${v.slice(0, 2)}) ${v.slice(2, 7)}-${v.slice(7)}`;
+      else if (v.length > 2) v = `(${v.slice(0, 2)}) ${v.slice(2)}`;
+      else if (v.length > 0) v = `(${v}`;
+      el.value = v;
+    }
+
+    /* Envio do lead (modal + formulário do rodapé) → webhook n8n */
+    const WEBHOOK_URL = 'https://2-n8n-webhook.ixgn2r.easypanel.host/webhook/form-site-implante';
+    async function submitLead(event) {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const wrap = form.closest('[data-leadform]');
+      const btn = form.querySelector('button[type="submit"]');
+      const data = Object.fromEntries(new FormData(form).entries());
+      const payload = {
+        name: (data.name || '').trim(),
+        phone: (data.phone || '').trim(),
+        source: 'landing-implante-porto-velho',
+        offer: 'avaliacao-gratuita',
+        page: location.href,
+        submitted_at: new Date().toISOString()
+      };
+
+      const label = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '<span class="spinner"></span> Enviando...';
+
+      try {
+        await fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        wrap.classList.add('done');
+      } catch (err) {
+        console.error('Falha ao enviar lead:', err);
+        alert('Não foi possível enviar agora. Tente novamente ou chame no WhatsApp.');
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = label;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
